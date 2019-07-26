@@ -1,4 +1,4 @@
-baseURL = "http://haokunt.github.io"
+baseURL = "https://hkvision.cn"
 languageCode = "zh-CN"
 title = "HaoKunT的博客"
 theme = "maupassant"
