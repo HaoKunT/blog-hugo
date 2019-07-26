@@ -1,0 +1,71 @@
+baseurl         = "https://haokunt.github.io/"
+theme           = "casper-two"
+languageCode    = "zh-cn"
+disqusShortname = "HaoKunT"
+paginate        = 5
+#SectionPagesMenu = "main"
+
+[params]
+  title       = "haokunt的小屋"
+  subtitle    = "来自一个什么都不会的coder"
+
+  cover       = "img/cover.jpg"
+  description = "WIWC"
+  # metaDescription = ""
+  # googleAnalytics = ""
+  customCSS = []
+  # RSSLink = ""
+
+  # twitterName = "faketryghost"
+  # fbName = "fakeghost"
+  githubName = "HaoKunT"
+  email = "haokunt@whu.edu.cn"
+
+  logo = "img/logo.jpg"
+  orgName = "GWmodel Lab"
+  orgWebsite = "https://gwmodel-lab.github.io"
+  orgDescription = "Geographical Weighted Modeling Laboratory, School of Remote Sensing and Information Engineering, Wuhan University"
+
+  author = "Haokun Tang"
+  authorAvatar = "img/favicon.ico"
+  authorLocation = "Wuhan, China"
+  authorWebsite = "https://haokunt.github.io"
+  authorDescription = "student of Wuhan University "
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/:year/:month/:day/:title/"
+
+[[menu.main]]
+  name = "Home"
+  weight = -1
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "Python"
+  weight = -2
+  identifier = "py"
+  url = "/tags/python"
+
+[[menu.main]]
+ name = "Golang"
+ weight = -3
+ identifier = "go"
+ url = "/tags/golang"
+
+[[menu.main]]
+  name = "Others"
+  weight = -4
+  identifier = "other"
+  url = "/tags/others"
+
+[[menu.main]]
+  name = "About"
+  weight = -5
+  identifier = "about"
+  url = "/about"

@@ -1,0 +1,55 @@
+baseURL = "http://haokunt.github.io"
+languageCode = "zh-CN"
+title = "HaoKunT的博客"
+theme = "maupassant"
+summaryLength = 10
+
+[author]
+  name = "HaoKunT"
+
+[params]
+  author = "HaoKunT"
+  subtitle = "GIS学生党，喜欢学习新技术"
+  keywords = "golang,go语言,python,HaoKunT"
+  description = "数据库，Web后端，Django，Golang"
+  busuanzi = true
+  preserveTaxonomyNames = true
+  disablePathToLower = true
+  
+  [params.utteranc]
+    enable = true
+    repo = "HaoKunT/blog-hugo"    # 存储评论的Repo，格式为 owner/repo
+    issueTerm = "pathname"  #表示你选择以那种方式让github issue的评论和你的文章关联。
+    theme = "github-light" # 样式主题，有github-light和github-dark两种
+
+  [[params.links]]
+    title = "R语言空间数据处理与分析实践教程"
+    name = "R语言空间数据处理与分析实践教程"
+    url = "https://baike.baidu.com/item/R%E8%AF%AD%E8%A8%80%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "tools"
+    name = "工具"
+    url = "/tools/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  
+[permalinks]
+  post = "/:year/:month/:day/:title/"
