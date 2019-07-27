@@ -12,3 +12,10 @@ disablePathToLower = true
 下面是平时搜集的在线工具，或在线工具网站，省得再去百度
 
 ## 常用工具
+### 图片压缩
+- [picdiet][picdiet]，能将图片大小压缩80%而不影响图片质量，只针对`jpg`文件有效果
+- [tinypng][tinypng]，能压缩jpg文件和png文件
+
+
+[picdiet]: https://www.picdiet.com/
+[tinypng]: https://tinypng.com/

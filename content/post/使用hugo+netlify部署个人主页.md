@@ -31,7 +31,7 @@ go get -v -u github.com/gohugoio/hugo
 ```
 hugo new site /blog
 ```
-这样在`/blog`下生成了储时站点，`cd`进去
+这样在`/blog`下生成了初始站点，`cd`进去
 ```
 cd /blog
 ```
@@ -182,10 +182,12 @@ type: archives # 这里类型一定要是archives
 
 进去后直接用`Github`登录，安装`Github app`，反正按照流程来就行了，记得直接将网站所在的repo作为持续部署的库，会自动识别这个库是Hugo的库，command那里会自动填充`Hugo`，`Publish directory`那里会自动填充`public`
 
-一切顺利的话你的网站已经成功部署了，netlify也提供二级子域名供你使用，如果你有自己的域名的话，也可以自定义域名，然后在域名服务商那里调整一下解析策略。
+一切顺利的话你的网站已经成功部署了，netlify也提供二级子域名供你使用，如果你有自己的域名的话，也可以自定义域名，然后在域名服务商那里调整一下解析路线。
+
+`netlify`提供持续集成，自动HTTPS，检查是否混用等实用功能，当你更新文章后直接推送到github仓库，`netlify`会自动重新构建，构建成功会自动发布，非常方便。当然`GitHub Pages`也可以做持续集成，自己写一个小`shell`就行，网上教程很多，就不列举了。
 
 ## 几个坑
-- `BaseUrl`一定要配置好，特别是后面用自己的域名的时候
+- `BaseUrl`一定要配置好，特别是后面用自己的域名的时候，或者你一开始就准备好了部署的域名。若出现更换域名的情况，则除了修改DNS以外，还要修改`BaseUrl`，重新发布。
 - 大家可能发现`关于`页面，`工具`页面好像返回的`404`。其实这是因为你还没有写对应的文章，你可以在`content`下新建一个`about`目录，然后新建`index.md`，这里写自己的关于页面，`工具`页面同理
 - 用`git clone`下来的主题其实都是`submodules`，但是没有相应的`.gitmodules`文件，而netfily只认`submodules`，只认`.gitmodules`文件，所以在下载主题的时候，要么用`git add submodules`命令，要么就手动添加一个`.gitmodules`文件，文件内容如下
 ``` .gitmodules
@@ -194,6 +196,7 @@ type: archives # 这里类型一定要是archives
 	url = https://github.com/rujews/maupassant-hugo
 ```
 这是最大的坑，很折磨人，尤其是我对git的子模块一点不熟
+- 有些人可能会问我明明添加了文章但是为什么不显示呢？通常这是因为文章的`draft`参数没有设置为`false`，设置为`true`的时候代表是草稿，是不会渲染的，所以你看不到。其实这个很简单但是刚开始用的时候总是会忘。
 
 > 祝大家每一步都顺利
 
