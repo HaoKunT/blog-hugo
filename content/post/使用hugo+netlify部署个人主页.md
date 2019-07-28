@@ -9,6 +9,9 @@ preserveTaxonomyNames = true
 disablePathToLower = true
 +++
 
+
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn](https://hkvision.cn)
+
 ## 前述
 起了无数次搭博客的心，前两天才下定决心用hugo弄个博客出来，毕竟码了几年的代码，也需要记点东西。
 去年用django写了个博客的半成品，被老师吐槽了审美，也没兴致继续弄下去了。前段时间学了go语言，发现了hugo这个东西，听说这玩意生成网页很快，打算用这个弄。大家实践过程中如果出错了，可以先看一下后面我遇到的坑，也许对你有所帮助。
@@ -201,6 +204,8 @@ type: archives # 这里类型一定要是archives
 > 祝大家每一步都顺利
 
 > 最后在这里感谢[JokerQyou][JokerQyou]，[飞雪无情][飞雪无情]提供的主题
+
+
 
 
 

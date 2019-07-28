@@ -8,6 +8,9 @@ categories = ["存储"]
 preserveTaxonomyNames = true
 disablePathToLower = true
 +++
+
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn](https://hkvision.cn)
+
 ## seafile
 [seafile][seafile]是一个同步云盘，可以在自己的服务器上自行搭建同步云盘，基于django开发，python版本为python2.7，目前有社区版可用。
 
@@ -42,6 +45,8 @@ map $http_upgrade $proxy_connection {
     }
 ```
 自此就完成了部署，若以后持续为seafile增加功能，本文将持续更新
+
+
 
 
 [seafile]: https://www.seafile.com/home/ "seafile官网"

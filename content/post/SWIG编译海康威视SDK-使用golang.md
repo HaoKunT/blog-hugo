@@ -8,6 +8,9 @@ categories = ["Golang","SWIG"]
 preserveTaxonomyNames = true
 disablePathToLower = true
 +++
+
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn](https://hkvision.cn)
+
 ## 吐槽的话
 先允许我吐槽一下海康威视的SDK有多难用SWIG编译
 
@@ -39,7 +42,7 @@ interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量�
 
 因此我们需要先对头文件进行改写，另外请注意SWIG之后需要用cgo来进行编译，而cgo是不支持C++的，所以我们需要将C++的语法去掉，尤其是`extern "C"`，用宏定义即可（C++自带`__cplusplus`宏）
 
-#### 使用正则表达式去掉所有注释：
+#### 使用正则表达式去掉所有注释
 - `//.*$` 
 - `/\*[\w\s\d\[\];\.\\]*\*/` (这里中括号中间要加一个代表中文的东西)
 

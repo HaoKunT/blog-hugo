@@ -17,5 +17,8 @@ disablePathToLower = true
 - [tinypng][tinypng]，能压缩jpg文件和png文件
 
 
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn][https://hkvision.cn]
+
+
 [picdiet]: https://www.picdiet.com/
 [tinypng]: https://tinypng.com/

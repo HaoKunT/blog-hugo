@@ -8,6 +8,9 @@ categories = ["Python","SWIG"]
 preserveTaxonomyNames = true
 disablePathToLower = true
 +++
+
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn](https://hkvision.cn)
+
 ## SWIG用途
 SWIG是用于开发C/C++与Java，Python，Perl，C#等高级语言之间接口的框架，利用这个框架，我们可以很方便的将C/C++程序应用在Python等高级语言中。
 
@@ -77,5 +80,7 @@ int example::get_num(void) {
 第二部分是编译，生成中间代码的步骤中包含%{....%}的地方将会被放在cxx文件中，也就是说这部分是在编译时起作用的。
 2. 生成中间代码仅仅是生成待编译的cxx文件，swig只需要找到接口的声明就好，不关心其实现。
 3. SWIG支持的语法不多，若生成中间代码步骤中报错，可以考虑是SWIG的问题，尽量采用ANSI C的语法。
+
+
 
 

@@ -8,6 +8,9 @@ categories = ["Golang"]
 preserveTaxonomyNames = true
 disablePathToLower = true
 +++
+
+> 本文为原创文章，转载注明出处，欢迎关注网站[https://hkvision.cn](https://hkvision.cn)
+
 ## go命令行参数
 
 ### 编译
@@ -45,6 +48,8 @@ cgo是go语言对于和C语言混合编程所给出的官方解决方案，用C�
 - Example
 
 有关`golang`测试的详细信息请[参考][golangtest]
+
+
 
 
 [golangtest]: https://blog.csdn.net/u011957758/article/details/81267972
