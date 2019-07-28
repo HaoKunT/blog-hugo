@@ -3,6 +3,7 @@ languageCode = "zh-CN"
 title = "HaoKunT的博客"
 theme = "maupassant"
 summaryLength = 10
+googleAnalytics = "UA-144740297-1"
 
 [author]
   name = "HaoKunT"
