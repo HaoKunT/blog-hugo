@@ -15,9 +15,10 @@ disablePathToLower = true
 下面是平时搜集的在线工具，或在线工具网站，或者是一些省得再去百度的网站
 
 ## 常用工具
-### 图片压缩
+### 图片
 - [picdiet][picdiet]，能将图片大小压缩80%而不影响图片质量，只针对`jpg`文件有效果
 - [tinypng][tinypng]，能压缩`jpg`文件和`png`文件
+- [bigjpg][bigjpg]，在线无损提高图片画质
 
 ### 联想服务器
 - [联想服务器在UEFI HII界面中配置阵列的基本操作][lenovo-uefi-hii-raid]
@@ -28,3 +29,4 @@ disablePathToLower = true
 [picdiet]: https://www.picdiet.com/
 [tinypng]: https://tinypng.com/
 [lenovo-uefi-hii-raid]: https://iknow.lenovo.com.cn/detail/dc_154455.html
+[bigjpg]: https://bigjpg.com/

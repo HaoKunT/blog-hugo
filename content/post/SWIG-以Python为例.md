@@ -81,6 +81,9 @@ int example::get_num(void) {
 2. 生成中间代码仅仅是生成待编译的cxx文件，swig只需要找到接口的声明就好，不关心其实现。
 3. SWIG支持的语法不多，若生成中间代码步骤中报错，可以考虑是SWIG的问题，尽量采用ANSI C的语法。
 
+## 编译整个海康威视SDK
+如果你想编译整个SDK的话请参考我另外一篇[文章](https://hkvision.cn/2019/07/26/swig%E7%BC%96%E8%AF%91%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86sdk-%E4%BD%BF%E7%94%A8golang/)
+
 
 
 

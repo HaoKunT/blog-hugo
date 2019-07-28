@@ -27,7 +27,7 @@ disablePathToLower = true
 >不知道GOPATH是什么的童鞋请自行百度
 
 ### 编写interface文件
-interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量，函数等在目标语言环境中的表达，具体可参考我另一篇文章。这里我们简单粗暴的直接包含头文件好了
+interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量，函数等在目标语言环境中的表达，具体可参考我另一篇[文章][interface编写]。这里我们简单粗暴的直接包含头文件好了
 
 ``` C
 #include <HCNetSDK.h>
@@ -86,3 +86,4 @@ interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量�
 >PS：`msvc`和`gcc`差别蛮大的，另外cgo没有使用g++的原因是会报一个错，在`pthread`这个库里面，这个库是cgo原生需要引入的一个库，而这个库貌似不支持g++
 
 [SDK]: https://www.hikvision.com/cn/download_61.html
+[interface编写]: https://hkvision.cn/2019/07/26/swig-%E4%BB%A5python%E4%B8%BA%E4%BE%8B/
