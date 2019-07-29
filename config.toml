@@ -16,6 +16,8 @@ googleAnalytics = "UA-144740297-1"
   busuanzi = true
   preserveTaxonomyNames = true
   disablePathToLower = true
+
+  customJS = ["baidu-push.js"]
   
   [params.utteranc]
     enable = true
