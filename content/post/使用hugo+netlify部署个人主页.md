@@ -200,6 +200,7 @@ type: archives # 这里类型一定要是archives
 ```
 这是最大的坑，很折磨人，尤其是我对git的子模块一点不熟
 - 有些人可能会问我明明添加了文章但是为什么不显示呢？通常这是因为文章的`draft`参数没有设置为`false`，设置为`true`的时候代表是草稿，是不会渲染的，所以你看不到。其实这个很简单但是刚开始用的时候总是会忘。
+- 如果你看不到`netlify`的部署日志（我在网上搜了无数次都没人提到这个），显示`Deploy logs are currently unavailable. We are working on resolving the issue.`，那是被墙了。
 
 > 祝大家每一步都顺利
 
