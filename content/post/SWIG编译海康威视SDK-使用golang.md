@@ -63,6 +63,8 @@ interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量�
 #### 删除无实现的函数
 有一些函数在so里面并没有实现，我在官方的文档上也没看到这个函数，但是头文件里面已经有相关的函数定义，而没有实现的话在链接的时候gcc会因为没有找到函数实现报错，因此这一点比较坑，你需要先编译一遍，然后对着报错手动把这些函数删掉，通常包括旧有方法的新版本，例如`xxxx_V50`等等，和具体的SDK版本有关
 
+> 这里有已经修改好的一份[修改好的头文件]可以用，版本具体记不清了，是`19年3月`的版本，64位
+
 ### 开始编译
 #### 生成xxx_wrap.c文件和xxx.go文件
 首先生成wrap文件和go文件，执行的指令是`swig -go -cgo -intgosize 64 hkvision.i`，这一步大概需要半小时，因具体的机器而异，我用的是E5 2690 v3
@@ -87,3 +89,4 @@ interface文件是SWIG的接口文件，用来定义`C`语言环境中的变量�
 
 [SDK]: https://www.hikvision.com/cn/download_61.html
 [interface编写]: https://hkvision.cn/2019/07/26/swig-%E4%BB%A5python%E4%B8%BA%E4%BE%8B/
+[修改好的头文件]: https://raw.githubusercontent.com/HaoKunT/github-content/master/content/blog/post/SWIG编译海康威视SDK-使用golang/HCNetSDK.h
