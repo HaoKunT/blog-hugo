@@ -3,7 +3,7 @@ languageCode = "zh-CN"
 title = "HaoKunT的博客"
 theme = "maupassant"
 summaryLength = 10
-googleAnalytics = "UA-144740297-1"
+# googleAnalytics = "UA-144740297-1"
 
 [author]
   name = "HaoKunT"
@@ -17,7 +17,7 @@ googleAnalytics = "UA-144740297-1"
   preserveTaxonomyNames = true
   disablePathToLower = true
 
-  customJS = ["baidu-push.js"]
+  # customJS = ["baidu-push.js"]
   
   [params.utteranc]
     enable = true
