@@ -4,7 +4,7 @@ date = 2019-07-26T06:12:25+08:00  # 自动添加日期信息
 draft = false  # 设为false可被编译为HTML，true供本地修改
 tags = ["swig", "python", "混合编程"]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
 toc = true
-categories = ["Python","SWIG"]
+categories = ["Python","SWIG","技术"]
 preserveTaxonomyNames = true
 disablePathToLower = true
 +++
