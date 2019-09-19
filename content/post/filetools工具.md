@@ -15,10 +15,13 @@ disablePathToLower = true
 本人用`golang`写的一个小工具，用于对文件进行操作，项目地址在这：[filetools][filetools地址]
 
 ## 安装
+~~暂时无法直接提供编译好的二进制文件，等我啥时候有时间了研究下CI工具再说。~~
+
+现在已经可以提供二进制下载了，去github release上找就行，想安装最新版的可以从源码安装
 ``` shell
-go get github.com/haokunt/filetools
+go get -u github.com/haokunt/filetools/...
 ```
-暂时无法直接提供编译好的二进制文件，等我啥时候有时间了研究下CI工具再说。
+源码安装需要你有go环境，目前没有测试最低版本，1.11+都是可以的。
 
 ## 使用
 最初写这个工具的设想是将很多命令整合到一起，像`cp`,`mv`,`rm`等，所以所有功能均使用子命令的方式进行提供，可以用`-h`来查看使用帮助。对于子命令也可以在后面加上`-h`查看子命令使用帮助。
