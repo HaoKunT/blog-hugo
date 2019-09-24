@@ -40,6 +40,16 @@ summaryLength = 10
     name = "HPdell的博客"
     url = "https://hpdell.github.io"
 
+  [[params.links]]
+    title = "lsq的博客"
+    name = "lsq的博客"
+    url = "https://lsq210.github.io"
+
+  [[params.links]]
+    title = "mysticfalls的博客"
+    name = "mysticfalls的博客"
+    url = "https://mysticfalls0709.github.io"
+
 [menu]
 
   [[menu.main]]
