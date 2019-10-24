@@ -1,7 +1,7 @@
 +++
 title = "IPXE+netboot+ISCSI 网络启动"  # 文章标题
 date = 2019-10-15T19:00:45+08:00  # 自动添加日期信息
-draft = true  # 设为false可被编译为HTML，true供本地修改
+draft = false  # 设为false可被编译为HTML，true供本地修改
 tags = [""]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
 categories = [""]
 toc = true
@@ -41,12 +41,12 @@ disablePathToLower = true
 - tftp服务器需要放一些什么？tftp服务器需要放PXE的相关文件，意思就是说，网启的时候会首先去读这个启动镜像来加载IPXE的启动程序，进入IPXE的启动流程中
 - IPXE的配置需要我做什么？如果是看了b站的那个视频的话，其实很简单，你需要在menu.ipxe，boot.ipxe.cfg这些文件里面配置好你的ISCSI位置，操作系统安装文件的位置这两大位置，然后用IPXE的语法设计一套菜单出来（你可以用网上那些牛人写的菜单，但是他们的菜单只考虑了单ISCSI的情况，或者根本没有ISCSI，只是安装的时候进行网启）。菜单的设计也不难，首先是需要选择ISCSI的位置，然后选择是要安装系统还是直接启动，安装系统的话选择好安装的系统版本，就可以了。
 - 安装操作系统的时候，安装文件放哪？安装文件需要你建站，要么建一个web站，用http进行传输，要么也可以试试ftp站，ftp协议进行传输。怎么建web站和ftp站网上有很多教程，群晖的话更简单，web station界面化建站，ftp直接开启，都是可以的。
-- ISCSI呢？ISCSI仅仅是提供一块硬盘位置，群晖里面提前弄好，然后再IPXE里面配置好就行了。
+- ISCSI呢？ISCSI仅仅是提供一块硬盘位置，群晖里面提前弄好，然后在IPXE里面配置好就行了。
 
 ## 安装后的再次启动
 再次启动的话直接选择好ISCSI位置，直接boot就行
 
-## 附上我的IPXE配置
+## 附上我的IPXE菜单配置
 ```
 #!ipxe
 
@@ -125,3 +125,6 @@ boot || goto failed
 goto san-choose
 ```
 目前暂时只实现了Ubuntu的，根据IPXE的官网，Linux系统与Ubuntu类似，FreeBSD应该也没问题，Windows系统需要用WinPE（微软官方的PE制作工具）
+
+## 2019/10/24更新
+用了一个新的方法做WinPE，做完了然后我就没测试了，搞的太累了不想折腾。Unix like蛮好的，反正咱不缺Windows主机
