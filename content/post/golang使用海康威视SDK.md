@@ -20,6 +20,7 @@ disablePathToLower = true
 
 ## 使用
 下面从两个方面来介绍
+
 - golang中已有的类型对应关系
 - C里面`typedef`的值的对应关系，例如海康威视有`BOOL`,`DWORD`等
 

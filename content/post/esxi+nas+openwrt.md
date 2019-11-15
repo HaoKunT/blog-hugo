@@ -137,3 +137,6 @@ opkg install luci-i18n-base-zh-cn // 这里安装中文翻译
 然后就大功告成了，直接在浏览器里面输入Openwrt的地址就能访问到luci的管理界面了，记得提前设好root密码。
 
 暂时只写到这里，我继续摸索第三部分，ipxe+iscsi无盘启动，未完待续...
+
+第一部分:[ESXI安装](https://hkvision.cn/2019/10/01/esxi%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/)
+第三部分:[ipxe+网启+ISCSI](https://hkvision.cn/2019/10/15/ipxe-netboot-iscsi-%E7%BD%91%E7%BB%9C%E5%90%AF%E5%8A%A8/)

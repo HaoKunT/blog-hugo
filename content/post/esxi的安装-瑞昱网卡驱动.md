@@ -50,7 +50,7 @@ disablePathToLower = true
 未完待续...（后面还会有安装虚拟机，iscsi的内容，等我先去探探路）
 
 第二部分完成，请继续阅读:[esxi+nas+openwrt的网络构架和安装](https://hkvision.cn/2019/10/07/esxi-nas-openwrt/)
-
+第三部分完成，请继续阅读:[ipxe+网启+ISCSI](https://hkvision.cn/2019/10/15/ipxe-netboot-iscsi-%E7%BD%91%E7%BB%9C%E5%90%AF%E5%8A%A8/)
 
 
 

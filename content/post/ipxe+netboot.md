@@ -2,8 +2,8 @@
 title = "IPXE+netboot+ISCSI 网络启动"  # 文章标题
 date = 2019-10-15T19:00:45+08:00  # 自动添加日期信息
 draft = false  # 设为false可被编译为HTML，true供本地修改
-tags = [""]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
-categories = [""]
+tags = ["ipxe"]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
+categories = ["服务器","运维"]
 toc = true
 preserveTaxonomyNames = true
 disablePathToLower = true
@@ -37,6 +37,7 @@ disablePathToLower = true
 6. 安装操作系统
 
 下面我们来解答一些疑问
+
 - 首先是tftp的配置，这里tftp服务器的地址是由DHCP服务器提供的，需要在DHCP服务器开启相关配置，等于DHCP服务器多传了一段信息，在正常的DHCP中这段信息是会被忽略掉的，只有在网络启动的时候才会被使用。OpenWRT和群晖的DHCP均可开启tftp。
 - tftp服务器需要放一些什么？tftp服务器需要放PXE的相关文件，意思就是说，网启的时候会首先去读这个启动镜像来加载IPXE的启动程序，进入IPXE的启动流程中
 - IPXE的配置需要我做什么？如果是看了b站的那个视频的话，其实很简单，你需要在menu.ipxe，boot.ipxe.cfg这些文件里面配置好你的ISCSI位置，操作系统安装文件的位置这两大位置，然后用IPXE的语法设计一套菜单出来（你可以用网上那些牛人写的菜单，但是他们的菜单只考虑了单ISCSI的情况，或者根本没有ISCSI，只是安装的时候进行网启）。菜单的设计也不难，首先是需要选择ISCSI的位置，然后选择是要安装系统还是直接启动，安装系统的话选择好安装的系统版本，就可以了。
