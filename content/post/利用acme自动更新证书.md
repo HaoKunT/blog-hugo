@@ -53,9 +53,9 @@ export Ali_secret="xxxxxxxxxxx"
 ### 安装证书到nginx
 记住不要直接把证书放到nginx的配置下，要用脚本提供的命令，因为这样脚本在证书快过期的时候自动更新才会知道应该放到哪，并做什么操作
 ``` shell
-acme.sh --installcert -d xxx.xxx.com \
-               --key-file      /home/ubuntu/www/ssl/xxx.xxx.com.key  \
-               --fullchain-file /home/ubuntu/www/ssl/xxx.xxx.com.key.pem \
+acme.sh --installcert -d xxx.xxx.com \ 
+               --key-file      /home/ubuntu/www/ssl/xxx.xxx.com.key  \ 
+               --fullchain-file /home/ubuntu/www/ssl/xxx.xxx.com.key.pem \ 
                --reloadcmd     "sudo service nginx force-reload"
 ```
 `--reloadcmd`会让脚本在更新完后执行一个命令，这里就是重新载入配置
