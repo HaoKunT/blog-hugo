@@ -2,8 +2,8 @@
 title = "函数计算搭建DNS服务器"  # 文章标题
 date = 2020-02-05T13:27:27+08:00  # 自动添加日期信息
 draft = false  # 设为false可被编译为HTML，true供本地修改
-tags = ["DNS","DoH"]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
-categories = ["技术"]
+tags = ["DNS","DoH","函数计算"]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
+categories = ["技术","阿里云"]
 toc = true
 preserveTaxonomyNames = true
 disablePathToLower = true
