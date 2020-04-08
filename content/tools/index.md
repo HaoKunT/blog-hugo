@@ -20,6 +20,10 @@ disablePathToLower = true
 - [tinypng][tinypng]，能压缩`jpg`文件和`png`文件
 - [bigjpg][bigjpg]，在线无损提高图片画质
 
+### Markdown
+
+- [数学公式语法](https://www.jianshu.com/p/e74eb43960a1)
+
 ### 联想服务器
 - [联想服务器在UEFI HII界面中配置阵列的基本操作][lenovo-uefi-hii-raid]
 
