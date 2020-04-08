@@ -51,6 +51,21 @@ summaryLength = 10
     name = "mysticfalls的博客"
     url = "https://mysticfalls0709.github.io"
 
+  [[params.ads]]
+    title = "【云小站】新老顾客都返佣"
+    url = "https://www.aliyun.com/minisite/goods?source=5176.11533457&userCode=lxdp38ei"
+    img = "https://img.alicdn.com/tfs/TB1iSEKqRr0gK0jSZFnXXbRRXXa-220-120.jpg"
+
+  [[params.ads]]
+    title = "采购季，上云仅233元/3年"
+    url = "https://www.aliyun.com/sale-season/2020/procurement-new-members?source=5176.11533457&userCode=lxdp38ei&type=copy"
+    img = "https://img.alicdn.com/tfs/TB1Yr3IvubviK0jSZFNXXaApXXa-220-120.jpg"
+
+  [[params.ads]]
+    title = "企业级云服务器 1折特惠"
+    url = "https://promotion.aliyun.com/ntms/act/enterprise-discount.html?source=5176.11533457&userCode=lxdp38ei&type=copy"
+    img = "https://img.alicdn.com/tfs/TB1Gc3zmAL0gK0jSZFxXXXWHVXa-259-194.jpg"
+
 [menu]
 
   [[menu.main]]
