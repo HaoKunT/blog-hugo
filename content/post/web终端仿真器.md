@@ -20,7 +20,7 @@ disablePathToLower = true
 
 ​		最开始我碰到的问题是我在执行`git clone`命令的时候，我发现如果我把执行结果重定向到一个文件上，或者是我用Golang的`exec.Command`命令执行的时候将结果用管道扔到我的程序里，执行的结果就只有一行`Cloning xxx into xxx...`，而正常的结果应该是像这样的
 
-![image-20200306231815194](C:\Users\11515\AppData\Roaming\Typora\typora-user-images\image-20200306231815194.png)
+![](https://haokunt-pic.oss-cn-beijing.aliyuncs.com/20200409020900.png)
 
 ​		这个问题我一开始以为是clone的进度是一个类似于进度条，导致这种进度条无法被重定向，一度找问题找错了方向。后来发现不是这个原因，我在[这个地方](https://stackoverflow.com/questions/32685568/git-clone-writes-to-sderr-fine-but-why-cant-i-redirect-to-stdout)找到了原因，原来是因为git这个命令，将stdout和stderr赋予了不同的涵义，stderr是一个**人更感兴趣**的输出，而stderr是**机器更感兴趣**的输出，因此有一个静默模式，就是说在git发现输出的终点不是一个终端（terminal）的时候，将默认不将人感兴趣的内容输出，也就是更加的安静（quiet），在git的[文档](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-clone.html)中我们也可以发现这点，这里引文档的这段话
 
