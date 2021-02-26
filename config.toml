@@ -53,6 +53,11 @@ summaryLength = 10
     name = "mysticfalls的博客"
     url = "https://mysticfalls0709.github.io"
 
+  [[params.links]]
+    title = "GWmodel Lab团队主页"
+    name = "GWmodel Lab团队主页"
+    url = "http://gwmodel.whu.edu.cn"
+
   [[params.ads]]
     title = "【云小站】新老顾客都返佣"
     url = "https://www.aliyun.com/minisite/goods?source=5176.11533457&userCode=lxdp38ei"

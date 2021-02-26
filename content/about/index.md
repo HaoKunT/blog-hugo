@@ -21,7 +21,7 @@ R语言交流群: 350921789
 
 
 
-[团队主页]: https://gwmodel-lab.github.io
+[团队主页]: http://gwmodel.whu.edu.cn
 [团队GitHub]: https://github.com/GWmodel-Lab
 [qr]: https://raw.githubusercontent.com/HaoKunT/github-content/master/content/blog/about/GWmodel-qr.png
 [R书]: https://baike.baidu.com/item/R%E8%AF%AD%E8%A8%80%E7%A9%BA%E9%97%B4%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%8E%E5%88%86%E6%9E%90%E5%AE%9E%E8%B7%B5%E6%95%99%E7%A8%8B
