@@ -18,6 +18,8 @@ summaryLength = 10
   disablePathToLower = true
   localSearch = true
 
+  fancybox = true
+
   # customJS = ["baidu-push.js"]
   
   [params.utteranc]
