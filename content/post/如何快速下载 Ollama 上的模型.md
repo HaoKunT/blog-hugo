@@ -1,5 +1,5 @@
 +++
-title = "如何快速下载 Ollama 上的模型"  # 文章标题
+title = "如何用 ollama 快速下载 deepseek 模型"  # 文章标题
 date = 2025-02-09T01:46:34+08:00  # 自动添加日期信息
 draft = false  # 设为false可被编译为HTML，true供本地修改
 tags = ["LLM", "本地部署"]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
